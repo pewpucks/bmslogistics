@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "mongodb+srv://username:password@cluster.mongodb.net/bms-logistics?retryWrites=true&w=majority"
+  },
+  "regions": ["cdg1"],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+} 
